@@ -93,33 +93,18 @@ on your phone with fast delivery"
         app:layout_constraintVertical_bias="0.85"
         tools:ignore="MissingConstraints">
 
+
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button_click"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="open activitymain2"/>
-
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="94dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="112dp"
-            android:layout_marginBottom="11dp"
-            android:text="Get Started"
-            android:textAlignment="center"
-            android:textColor="#ff5e00"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_centerHorizontal="true"
+            android:text="Get started"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="0dp" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

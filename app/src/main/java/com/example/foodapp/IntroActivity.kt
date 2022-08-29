@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.widget.Toast
+import android.widget.Button
 
 class IntroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,11 +12,17 @@ class IntroActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Handler().postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,Activity2::class.java)
             startActivity(intent)
             finish()
         }, 3000
 
         )
+        val buttonClick = findViewById<Button>(R.id.button_click)
+        buttonClick.setOnClickListener {
+            val intent = Intent(this, Activity2::class.java)
+            startActivity(intent)
+        }
+
     }
 }
