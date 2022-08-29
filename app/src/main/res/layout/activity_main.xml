@@ -76,6 +76,8 @@ on your phone with fast delivery"
         tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:text="activity_main1"
+        android:onClick="@activity_main2"
         android:layout_width="311dp"
         android:layout_height="49dp"
         android:layout_marginStart="55dp"
@@ -90,6 +92,13 @@ on your phone with fast delivery"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         app:layout_constraintVertical_bias="0.85"
         tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="open activitymain2"/>
+
 
         <TextView
             android:id="@+id/textView2"
