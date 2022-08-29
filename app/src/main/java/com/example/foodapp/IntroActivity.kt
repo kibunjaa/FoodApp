@@ -10,7 +10,7 @@ class IntroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+/*
         Handler().postDelayed({
             val intent = Intent(this,Activity2::class.java)
             startActivity(intent)
@@ -18,6 +18,8 @@ class IntroActivity : AppCompatActivity() {
         }, 3000
 
         )
+
+ */
         val buttonClick = findViewById<Button>(R.id.button_click)
         buttonClick.setOnClickListener {
             val intent = Intent(this, Activity2::class.java)
